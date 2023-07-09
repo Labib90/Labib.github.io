@@ -1,71 +1,119 @@
-    <!DOCTYPE html>
-<h                                                             tml lang="en">
+ <!DOCTYPE html>
+<html lang="en">
     <head>
     <meta charset="UTF-8">
-    <meta http-equiv=nnnnnn"X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome To My Profile</title>
-    <style>
-        body{
-            background-color: greenyellow;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: larger;
-
-        }
-        p{
-            color: red;
-        }
-        h1{
-            padding-left: 50%;
-        }
-        img{
-            padding-left: 30%; 
-
-        }
-
-        .media{
-            padding-left: 50%;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/index.js"></script>
 </head>
+<article>
+<header style="background-color: ;">
+    <nav>
+        <ul>
+            <li><a href="/index.html">Profile</a></li>
+            <li><a href="/publication.html">Publication</a></li>
+            <li><a href="/Project.html">Project</a></li>
+            <li><a href="/Personal Blog.html">Personal Blog</a></li>
+        </ul>     
+        </nav>
+</header>
 <body>
-
-    <h1>Profile Labib</h1>
-    <p>Halo, nama saya Labib Ikhsan Putrantino saya dari Kudus, Jawa Tengah, Indonesia  (Jakarta, UTC+7)</p>
-    <p></p>
-    <p>Berikut perkenalan dan foto profil saya</p>
+<!-- <nav>
+    <div class="container">
+        <div>
+            <hr>
+        <h2>Daftar isi</h2>
+        
+        <ul>
+            <li><a href="#introduction">Perkenalan</a></li>
+            <li><a href="#Contact">Kontak</a></li>
+            <li><a href="#Skills">Skill</a></li>
+            <li><a href="#Experience">Pengalaman</a></li>
+            <li><a href="#Certificate">Sertifikasi</a></li>
+        </ul>
+        </div>
+        <hr>
+    </div>
+</nav> -->
+<h1 class="introduction" style="text-align: left;">Perkenalan</h1>
+    <p>Halo, nama saya Labib. Saya dari Kudus, Jawa Tengah, Indonesia  (Jakarta, UTC+7). Berikut adalah profil portfolio saya</p>
+    
+    
     <img src="./Tanpa_Peci_Non_Seragam_300x400.jpg" alt="Foto Labib SMA"/>
+    
     <p>Labib Ikhsan Putrantino</p><br>
-    <p>Universitas Terbuka (GPA 2.70/4.00), IAIN Kudus (State Islamic Institute Kudus) GPA(3.48)</p>
-    <p>Saya dari Universitas Terbuka mengikuti program (Sistem Informasi) dan IAIN Kudus (State Islamic Institute Kudus) mengikuti program (Creed and Islamic Philosophy)</p>
+
+    <p>Saya dari Universitas Terbuka mengikuti program (Sistem Informasi) dan dari IAIN Kudus (State Islamic Institute Kudus) mengikuti program (Creed and Islamic Philosophy)</p>
+    <table border= "1px solid black;">
+    <h2>Pendidikan</h2>
+    <ul>
+        <li>(S1) Ongoing Undergraduate student at Universitas Terbuka 4th semester (GPA 2.70/4.00)</li>
+        <li>(S1) Ongoing Undergraduate student at IAIN Kudus 4th semester (State Islamic Institute Kudus) GPA(3.58)</li>
+    </ul>
+    
+    
+    
     <h2>Contact</h2>
-    <p><a href="https://www.linkedin.com/in/labib-ikhsan-995493185/">LinkedIn</a></p>
-    <p><a href="https://github.com/Labib90">Github</a></p>
-    <p>Discord: Tino_90#4240</p>
-    <p></p>
-
-
-    <h2>Skill</h2>
+    <div class="Contact-container">
     <ol>
-        <b><li>HTML</dl></li></b> 
-        <b><li>CSS</li></b>
-        <b><li>Javascript</li></b>
-        <b><li>Express.js</li></b>
-        <b><li>Java</li></b>
-        <b><li>C++</li></b>
-        <b><li>C</li></b>
-        <b><li>C#</li></b>
-    </ol>
+        <li><a href="https://web.facebook.com/labib.ikhsan.58" class="fa fa-facebook"></a></li>
+        <li><a href="https://twitter.com/labib724" class="fa fa-twitter"></a></li>
+        <li><a href="https://github.com/Labib90" class="fa fa-github"></a></li>
+        <li><a href="https://www.linkedin.com/in/labib-ikhsan-995493185/" class="fa fa-linkedin"></a></li>
+        <li><a href="https://stackoverflow.com/users/15588948/labib90" class="fa-stack-overflow" title="Stack Overflow"></a></li>
+        <li><a href="https://medium.com/@labib724" class="fa fa-medium"></a></li>
+    <li><p><a href="discord.com" title="Link website discord">Discord</a> user: <a href="" title="Cari username Tino_90#4240">Tino_90#4240</a></p></li>
 
-    <h2>Pengalaman Kerja</h2>
-    <dd>Belum memiliki pengalaman kerja. Sudah pernah mengikuti bootcamp di codecademy.com, freecodecamp.org selama 2 tahun</dd>
+    </ol>
+    </div>
+    
+    <h2>Skill</h2>
+    <div class="Skills-container">
+    <ol>
+        <li>Frontend: HTML, CSS, JavaScript, React((React.js, React router)</li> 
+        <li>Backend: UML, PostgreSQL, Express.js, Node.js</li>
+        <li>Java</li>
+        <li>C++</li>
+        <li>C</li>
+        <li>C#</li>
+    </ol>
+    </div>
+    <h2>Pengalaman</h2>
+    <ol>
+        <li>Volunteer Theosophy Laboratory Student as media content creator (2021 - 2025 (expected))</li>
+        <li>Codecademy landing page hackathon (2021)</li>
+    </ol>
 
     <h2>Sertifikasi</h2>
     <ol>
-        <li>React dev PROA (Issued on May 2022)
-            certificate: https://drive.google.com/file/d/11h1xf9SPgyeMkeZkvubiNbe5VQom5vL_/view?usp=sharing
-        </li>
+        <section><a href="https://digitalent.kominfo.go.id/#" title="Link Website Digitalent Kominfo">Digitalent Kominfo</a></section>
+        <li><a href="https://drive.google.com/file/d/11h1xf9SPgyeMkeZkvubiNbe5VQom5vL_/view?usp=sharing">React Dev PROA</a> (Issued on May 2022)</li>  
+        <li><a href="https://drive.google.com/file/d/1q-rxgib3Le3GgMxwEbRVHMVPPdJsUjQt/view?usp=sharing">introduction of Go Language</a>(Issued on May 2023)</li>
+        <br>
+        <section><a href="https://www.codecademy.com/l" title="Link Website Codecademy">Codecademy</a></section>
+        <li><a href="https://drive.google.com/file/d/1MKReisurZT-V8LrhfyPPFcaltgUuuN_V/view?usp=sharing">Building Basic Android Apps With Java</a>(Issued on Jun 2023)</li>
+        <li><a href="https://drive.google.com/file/d/14RVlKHIHk2cT8TvgPDcbN0r00s54Xz_V/view?usp=sharing">Frontend Engineer</a>(Issued on Jun 2023)</li>
+        <li><a href="https://drive.google.com/file/d/1dHZ3ayGMLsF4p4lVGA3dXzR6uZDwgAfs/view?usp=sharing">Learn CSS</a>(Issued on Jun 2023)</li>
+        <li><a href="https://drive.google.com/file/d/1QTMechxKSMC1FfKzXJCRAJHdsRTZfKsC/view?usp=sharing">Learn Java Course</a>(Issued on Jun 2023)</li>
+        <li><a href="https://drive.google.com/file/d/1AiTFOlDiQOfRr0-i0NewjOTkTPqW3R4s/view?usp=sharing">Learn Node.js Fundamental</a>(Issued on Jun 2023)</li>
+        <li><a href="https://drive.google.com/file/d/1mi5eeOPysYg-zmRf1xRPVUwbfXEMNMuT/view?usp=sharing">Learn The Basic of Regular Expressions Course</a>(Issued on Jul 2022)</li>
+        <br>
+        <section><a href="https://www.linkedin.com/learning" title="Link Website LinkedIn Learning">Linkedin Learning</a></section>
+        <li><a href="https://drive.google.com/file/d/1RzywPiYF6w3N7oTtgtdSe_kuipCOBFw3/view?usp=sharing">Master Microsoft Word</a>(Issued on Apr 2023)</li>
+        <li><a href="https://drive.google.com/file/d/17ziq7ISiGJupX0Tvcte_fJfqS5s-P7an/view?usp=sharing">Develop Your Writing Skills</a>(Issued on Mar 2023)</li>
+        <li><a href="https://drive.google.com/file/d/1_l6CRQiURZgpItrE89ReQf5q7y7DWqfd/view?usp=sharing">Explore Web Development With Node.js</a>(Issued on Nov 2022)</li>
+        <li><a href="https://drive.google.com/file/d/1ChxpOgmcpWC4aZich-UO_V2ofQrW3NRC/view?usp=sharing">Getting Started With C++</a>(Issued on Nov 2022)</li>
+        <li><a href="https://drive.google.com/file/d/1n4Zv4I6gUZQte7iR65P7X0-RUmeq7H_L/view?usp=sharing">Getting Started With Software Testing</a>(Issued on Nov 2022)</li>
+        <li><a href="https://drive.google.com/file/d/1rqp3U9qpxpW4BzSH1H9htrwH66dvTgRA/view?usp=sharing">Explore Career in Frontend Web Development</a>(Issued on Oct 2022)</li>
+        <li><a href="https://drive.google.com/file/d/1VnG9E4LMwvZiPWrdevp7d5s0YDCcv9RD/view?usp=sharing">Become a Software Developer</a>(Issued on Jan 2022)</li>
+        <li><a href="https://drive.google.com/file/d/1s5ySbjGetOW5qHpXjOaEYKz-G2MK321j/view?usp=sharing">Develop Your SEO Skills</a>(Issued on Jan 2022)</li>
+        <br>
+        <section><a href="https://menaratc.id/beranda/" title="Link Website Menara Komputindo">Menara Komputindo</a></section>
+        <li><a href="https://drive.google.com/file/d/1ptjBaGws4bszqrBrvuxFYQe5mk15I6xs/view?usp=sharing">Teknisi Laptop</a>(Issued on Feb 2020)</li>
+        <li></li>
     </ol>
 
     
@@ -73,4 +121,5 @@
 <footer>
     <p> Terimakasih telah membaca portfolio saya.</p>  
 </footer>
+</article>
 </html>
