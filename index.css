@@ -6,7 +6,10 @@ html{
     font-weight: 400;
     flex-direction: inherit;
     text-align: justify;
-    background-color: greenyellow;
+    text-decoration: solid;
+    background-color: blue;
+    color: white;
+    
 }
 html h1 {
     font-size: 40px;
@@ -15,8 +18,49 @@ html h1 {
 html h2 {
     font-size: 30px
 }
+
+a{
+    color: white
+}
+
+body a:hover{
+    cursor: pointer;
+    background-color: aqua;
+    color: yellow;
+    text-decoration: underline;
+}
+
+body .digitalent a:hover{
+    cursor: pointer;
+    background-color: teal;
+    color: yellow;
+    text-decoration: underline;
+}
+
+body .codecademy a:hover{
+    cursor: pointer;
+    background-color: teal;
+    color: yellow;
+    text-decoration: underline;
+}
+
+body .linkedin-learning a:hover{
+    cursor: pointer;
+    background-color: teal;
+    color: yellow;
+    text-decoration: underline;
+}
+
+body .menara-komputindo a:hover{
+    cursor: pointer;
+    background-color: teal;
+    color: yellow;
+    text-decoration: underline;
+}
+
 header {
     background-color: ;
+    color: white;
     border: 50%;
     border-radius: 50%;
     height: 30vh;
@@ -47,7 +91,7 @@ header li {
 
 body{
     background-color: hsla(g, 50%, lightness, alpha);
-    color: black;
+    color: white;
     font-size: larger;
     border: ;
     margin: 50px;
@@ -61,11 +105,7 @@ body img{
     height: 20%;
 }
 
-a:hover{
-    cursor: pointer;
-    color: yellow;
-    text-decoration: underline;
-}
+
 
 body .Contact-container ol{
     display: block;
