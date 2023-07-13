@@ -22,6 +22,19 @@ html h2 {
 a{
     color: white
 }
+body #discord a:hover{
+    cursor: pointer;
+    background-color: aqua;
+    color: yellow;
+    text-decoration: underline;
+}
+
+body #username a:hover{
+    cursor: pointer;
+    background-color: aqua;
+    color: yellow;
+    text-decoration: underline;
+}
 
 body a:hover{
     cursor: pointer;
