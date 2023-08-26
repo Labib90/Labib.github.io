@@ -70,11 +70,10 @@ body .menara-komputindo a:hover{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: stretch;
-    align-items: flex-start |flex-end;}
+    align-items: flex-start|flex-end;}
 
-#container2 {
-        align-items:baseline;  
-       
+    #container2 {
+        align-items: baseline;
         margin-left: 1000px;
         padding-right: 5000px ;
         border: solid;
@@ -82,7 +81,7 @@ body .menara-komputindo a:hover{
         position: fixed;
         font-size: small;
         font-weight: lighter;
-}
+      }
 
 header {
     /* background-color: ; */
