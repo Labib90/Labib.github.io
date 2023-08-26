@@ -7,7 +7,7 @@ html{
     text-decoration: solid;
     background-color: turquoise;
     color: white;
-    
+    scroll-behavior: smooth;
 }
 html h1 {
     font-size: 40px;
@@ -69,8 +69,7 @@ body .menara-komputindo a:hover{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: stretch;
-    align-items: flex-start|flex-end;}
+    justify-content: stretch;}
 
     #container2 {
         align-items: baseline;
@@ -79,6 +78,7 @@ body .menara-komputindo a:hover{
         border: solid;
         border-radius: 20px;
         position: fixed;
+        z-index: 2;
         font-size: small;
         font-weight: lighter;
       }
