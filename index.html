@@ -1,16 +1,51 @@
  <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Welcome To My Profile</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
+    <script defer>
+        // alert("Maaf, masih dalam pengembangan");
+    </script>
 </head>
-<article>
-<header style="background-color: ;">
+
+<body>
+<header>
+<div class="container">
+    <script defer>
+        const sliderContent = document.querySelector('.slider-content');
+        let currentPosition = 0;
+        const slideWidth = 400;
+      
+        function slideTo(position) {
+          sliderContent.style.transform = `translateX(-${position}px)`;
+        }
+      
+        function nextSlide() {
+          currentPosition += slideWidth;
+          if (currentPosition > (slideWidth * 2)) {
+            currentPosition = 0;
+          }
+          slideTo(currentPosition);
+        }
+      
+        setInterval(nextSlide, 3000);
+      </script>
+
+    <div class="slider">
+        <div class="slider-content">
+          <div class="slide" style="background-color: red;"></div>
+          <div class="slide" style="background-color: green;"></div>
+          <div class="slide" style="background-color: blue;"></div>
+        </div>
+      </div>
+    <div class="sidebar">
+        
     <nav>
         <ul>
             <li><a href="index.html">Profile</a></li>
@@ -19,45 +54,69 @@
             <li><a href="Personal Blog.html">Personal Blog</a></li>
         </ul>     
         </nav>
-</header>
-<body>
-<nav>
-    <div class="container">
-        <div>
-            <hr>
-        <h2>Table of Content</h2>
-        
-        <ol>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#Contact-container">Contact</a></li>
-            <li><a href="#Skills-container">Skills</a></li>
-            <li><a href="#Experience-container">Experience</a></li>
-            <li><a href="#Certificate-container">Certification</a></li>
-        </ol>
-        </div>
-        <hr>
     </div>
-</nav>
-<h1 id="introuction" class="introduction" style="text-align: left;">Introduction</h1>
+
+    <nav>
+        <div id="container2">
+            <div>
+                <hr>
+            <h2>Table of Content</h2>
+            
+            <ol>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#Contact-container">Contact</a></li>
+                <li><a href="#Skills-container">Skills</a></li>
+                <li><a href="#Experience-container">Experience</a></li>
+                <li><a href="#Certificate-container">Certification</a></li>
+            </ol>
+            </div>
+            <hr>
+        </div>
+    </nav>
+    <h1>Portfolio</h1>
+    <sub>Kudus, Jawa Tengah, Indonesia.</sub>
+    <br>
+</header>
+
+
+<main>
+ 
+<br>
+
+
+<div class="main-content">
+    
+    <h2 id="introduction">Introduction</h2>
     <p>Halo, nama saya Labib. Saya dari Kudus, Jawa Tengah, Indonesia  (Jakarta, UTC+7). Berikut adalah profil portfolio saya</p>
     
     
-    <img src="./Tanpa_Peci_Non_Seragam_300x400.jpg" alt="Foto Labib SMA"/>
-    
-    <p>Labib Ikhsan Putrantino</p><br>
 
     <p>Saya dari Universitas Terbuka mengikuti program (Sistem Informasi) dan dari IAIN Kudus (State Islamic Institute Kudus) mengikuti program (Creed and Islamic Philosophy)</p>
-    <table border= "1px solid black;">
+<article>
     <h2>Education</h2>
     <ul>
-        <li>(S1) Ongoing Undergraduate student at Universitas Terbuka 4th semester (GPA 2.70/4.00)</li>
-        <li>(S1) Ongoing Undergraduate student at IAIN Kudus 4th semester (State Islamic Institute Kudus) GPA(3.58)</li>
+        <li>(S1) Undergraduate student at Universitas Terbuka 4th semester (GPA 2.70/4.00)</li>
+        <li>(S1) Undergraduate student at IAIN Kudus 4th semester (State Islamic Institute Kudus) GPA(3.64)</li>
     </ul>
+</article> 
     
+    <aside>
+
+    <figure class="foto">
+    <img src="/Tanpa_Peci_Non_Seragam_300x400.jpg" alt="Foto Labib SMA width ="300cm" height = "400cm"/>
+    <figcaption>Labib Ikhsan Putrantino tanpa jas</figcaption>
+    </figure>
+
+    <figure class="foto">
+        <img src="Jas Almameter Tertutup Labib.jpg" alt="Foto Jas Almameter" width="300cm" height="400cm">
+        <figcaption class="figcaption">Labib Ikhsan Putrantino dengan jas</figcaption>
+    </figure>
     
-    
-    <h2 id="Contact-container">Contact</h2>
+    </aside>
+<article>
     <div class="Contact-container">
+    <h2 id="Contact-container">Contact</h2>
+    
     <ol>
         <li><a href="https://web.facebook.com/labib.ikhsan.58" class="fa fa-facebook"></a></li>
         <li><a href="https://twitter.com/labib724" class="fa fa-twitter"></a></li>
@@ -66,7 +125,7 @@
         <li><a href="https://stackoverflow.com/users/15588948/labib90" class="fa-stack-overflow" title="Stack Overflow"></a></li>
         <li><a href="https://medium.com/@labib724" class="fa fa-medium"></a></li>
     <li id="discord"><p><a href="discord.com" title="Link website discord">Discord</a> user: <a id="username" title="Cari username Tino_90#4240">Tino_90#4240</a></p></li>
-
+        <li> Phone:</li>
     </ol>
     </div>
     
@@ -74,11 +133,7 @@
     <div class="Skills-container">
     <ol>
         <li>Frontend: HTML, CSS, JavaScript, React((React.js, React router)</li> 
-        <li>Backend: UML, PostgreSQL, Express.js, Node.js</li>
-        <li>Java</li>
-        <li>C++</li>
-        <li>C</li>
-        <li>C#</li>
+        
     </ol>
     </div>
     <h2 id="Experience-container">Experience</h2>
@@ -87,41 +142,57 @@
         <li>Codecademy landing page hackathon (2021)</li>
         <li>MOOC Creator on Komunitas Programming Kudus (2021-2023)</li>
     </ol>
-
     <h2 id="Certificate-container">Certification</h2>
+    <ol target="_blank">
+         <section class="digitalent"><a href="https://digitalent.kominfo.go.id/#" title="Link Website Digitalent Kominfo" target="_blank">Digitalent Kominfo</a></section>
+        <li><a href="https://drive.google.com/file/d/11h1xf9SPgyeMkeZkvubiNbe5VQom5vL_/view?usp=sharing" target="_blank">React Dev PROA</a> (Issued on May 2022)</li>  
+        <li><a href="https://drive.google.com/file/d/1q-rxgib3Le3GgMxwEbRVHMVPPdJsUjQt/view?usp=sharing" target="_blank">introduction of Go Language</a>(Issued on May 2023)</li>
+        <br>
+    </ol>
     <ol>
-        <section class="digitalent"><a href="https://digitalent.kominfo.go.id/#" title="Link Website Digitalent Kominfo">Digitalent Kominfo</a></section>
-        <li><a href="https://drive.google.com/file/d/11h1xf9SPgyeMkeZkvubiNbe5VQom5vL_/view?usp=sharing">React Dev PROA</a> (Issued on May 2022)</li>  
-        <li><a href="https://drive.google.com/file/d/1q-rxgib3Le3GgMxwEbRVHMVPPdJsUjQt/view?usp=sharing">introduction of Go Language</a>(Issued on May 2023)</li>
+        <section class="codecademy"><a href="https://www.codecademy.com/l" title="Link Website Codecademy" target="_blank">Codecademy</a></section>
+        <li><a href="https://drive.google.com/file/d/1MKReisurZT-V8LrhfyPPFcaltgUuuN_V/view?usp=sharing" target="_blank">Building Basic Android Apps With Java</a>(Issued on Jun 2023)</li>
+        <li><a href="https://drive.google.com/file/d/14RVlKHIHk2cT8TvgPDcbN0r00s54Xz_V/view?usp=sharing" target="_blank">Frontend Engineer</a>(Issued on Jun 2023)</li>
+        <li><a href="https://drive.google.com/file/d/1dHZ3ayGMLsF4p4lVGA3dXzR6uZDwgAfs/view?usp=sharing" target="_blank">Learn CSS</a>(Issued on Jun 2023)</li>
+        <li><a href="https://drive.google.com/file/d/1QTMechxKSMC1FfKzXJCRAJHdsRTZfKsC/view?usp=sharing" target="_blank">Learn Java Course</a>(Issued on Jun 2023)</li>
+        <li><a href="https://drive.google.com/file/d/1AiTFOlDiQOfRr0-i0NewjOTkTPqW3R4s/view?usp=sharing" target="_blank">Learn Node.js Fundamental</a>(Issued on Jun 2023)</li>
+        <li><a href="https://drive.google.com/file/d/1mi5eeOPysYg-zmRf1xRPVUwbfXEMNMuT/view?usp=sharing" target="_blank">Learn The Basic of Regular Expressions Course</a>(Issued on Jul 2022 target="_blank")</li>
+    </ol>
         <br>
-        <section class="codecademy"><a href="https://www.codecademy.com/l" title="Link Website Codecademy">Codecademy</a></section>
-        <li><a href="https://drive.google.com/file/d/1MKReisurZT-V8LrhfyPPFcaltgUuuN_V/view?usp=sharing">Building Basic Android Apps With Java</a>(Issued on Jun 2023)</li>
-        <li><a href="https://drive.google.com/file/d/14RVlKHIHk2cT8TvgPDcbN0r00s54Xz_V/view?usp=sharing">Frontend Engineer</a>(Issued on Jun 2023)</li>
-        <li><a href="https://drive.google.com/file/d/1dHZ3ayGMLsF4p4lVGA3dXzR6uZDwgAfs/view?usp=sharing">Learn CSS</a>(Issued on Jun 2023)</li>
-        <li><a href="https://drive.google.com/file/d/1QTMechxKSMC1FfKzXJCRAJHdsRTZfKsC/view?usp=sharing">Learn Java Course</a>(Issued on Jun 2023)</li>
-        <li><a href="https://drive.google.com/file/d/1AiTFOlDiQOfRr0-i0NewjOTkTPqW3R4s/view?usp=sharing">Learn Node.js Fundamental</a>(Issued on Jun 2023)</li>
-        <li><a href="https://drive.google.com/file/d/1mi5eeOPysYg-zmRf1xRPVUwbfXEMNMuT/view?usp=sharing">Learn The Basic of Regular Expressions Course</a>(Issued on Jul 2022)</li>
+    <ol>
+        <section class="linkedin-learning"><a href="https://www.linkedin.com/learning" title="Link Website LinkedIn Learning" target="_blank">Linkedin Learning</a></section>
+        <li><a href="https://drive.google.com/file/d/1RzywPiYF6w3N7oTtgtdSe_kuipCOBFw3/view?usp=sharing" target="_blank">Master Microsoft Word</a>(Issued on Apr 2023)</li>
+        <li><a href="https://drive.google.com/file/d/17ziq7ISiGJupX0Tvcte_fJfqS5s-P7an/view?usp=sharing" target="_blank">Develop Your Writing Skills</a>(Issued on Mar 2023)</li>
+        <li><a href="https://drive.google.com/file/d/1_l6CRQiURZgpItrE89ReQf5q7y7DWqfd/view?usp=sharing" target="_blank">Explore Web Development With Node.js</a>(Issued on Nov 2022)</li>
+        <li><a href="https://drive.google.com/file/d/1ChxpOgmcpWC4aZich-UO_V2ofQrW3NRC/view?usp=sharing" target="_blank">Getting Started With C++</a>(Issued on Nov 2022)</li>
+        <li><a href="https://drive.google.com/file/d/1n4Zv4I6gUZQte7iR65P7X0-RUmeq7H_L/view?usp=sharing" target="_blank">Getting Started With Software Testing</a>(Issued on Nov 2022)</li>
+        <li><a href="https://drive.google.com/file/d/1rqp3U9qpxpW4BzSH1H9htrwH66dvTgRA/view?usp=sharing" target="_blank">Explore Career in Frontend Web Development</a>(Issued on Oct 2022)</li>
+        <li><a href="https://drive.google.com/file/d/1VnG9E4LMwvZiPWrdevp7d5s0YDCcv9RD/view?usp=sharing" target="_blank">Become a Software Developer</a>(Issued on Jan 2022)</li>
+        <li><a href="https://drive.google.com/file/d/1s5ySbjGetOW5qHpXjOaEYKz-G2MK321j/view?usp=sharing" target="_blank">Develop Your SEO Skills</a>(Issued on Jan 2022)</li>
         <br>
-        <section class="linkedin-learning"><a href="https://www.linkedin.com/learning" title="Link Website LinkedIn Learning">Linkedin Learning</a></section>
-        <li><a href="https://drive.google.com/file/d/1RzywPiYF6w3N7oTtgtdSe_kuipCOBFw3/view?usp=sharing">Master Microsoft Word</a>(Issued on Apr 2023)</li>
-        <li><a href="https://drive.google.com/file/d/17ziq7ISiGJupX0Tvcte_fJfqS5s-P7an/view?usp=sharing">Develop Your Writing Skills</a>(Issued on Mar 2023)</li>
-        <li><a href="https://drive.google.com/file/d/1_l6CRQiURZgpItrE89ReQf5q7y7DWqfd/view?usp=sharing">Explore Web Development With Node.js</a>(Issued on Nov 2022)</li>
-        <li><a href="https://drive.google.com/file/d/1ChxpOgmcpWC4aZich-UO_V2ofQrW3NRC/view?usp=sharing">Getting Started With C++</a>(Issued on Nov 2022)</li>
-        <li><a href="https://drive.google.com/file/d/1n4Zv4I6gUZQte7iR65P7X0-RUmeq7H_L/view?usp=sharing">Getting Started With Software Testing</a>(Issued on Nov 2022)</li>
-        <li><a href="https://drive.google.com/file/d/1rqp3U9qpxpW4BzSH1H9htrwH66dvTgRA/view?usp=sharing">Explore Career in Frontend Web Development</a>(Issued on Oct 2022)</li>
-        <li><a href="https://drive.google.com/file/d/1VnG9E4LMwvZiPWrdevp7d5s0YDCcv9RD/view?usp=sharing">Become a Software Developer</a>(Issued on Jan 2022)</li>
-        <li><a href="https://drive.google.com/file/d/1s5ySbjGetOW5qHpXjOaEYKz-G2MK321j/view?usp=sharing">Develop Your SEO Skills</a>(Issued on Jan 2022)</li>
-        <br>
-        <section class="menara-komputindo"><a href="https://menaratc.id/beranda/" title="Link Website Menara Komputindo">Menara Komputindo</a></section>
+    </ol>
+    <ol>
+        <section class="dicoding" ><a href="dicoding.com" target="_blank">Dicoding</a></section>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+    <ol>
+        <section class="menara-komputindo"><a href="https://menaratc.id/beranda/" title="Link Website Menara Komputindo" target="_blank">Menara Komputindo</a></section>
         <li><a href="https://drive.google.com/file/d/1ptjBaGws4bszqrBrvuxFYQe5mk15I6xs/view?usp=sharing">Teknisi Laptop</a>(Issued on Feb 2020)</li>
         <li></li>
     </ol>
-
+</div>
+</article>
+    </main>
+    <footer>
+        <p></p>
+        <p> Terimakasih telah membaca portfolio saya.</p>  
+    
+    </footer>
     
 </body>
-<footer>
-    <p></p>
-    <p> Terimakasih telah membaca portfolio saya.</p>  
-</footer>
-</article>
+
+
 </html>

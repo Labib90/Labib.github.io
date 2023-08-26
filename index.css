@@ -3,18 +3,16 @@ html{
     box-sizing: 50%;
     font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: 400;
     flex-direction: inherit;
-    text-align: justify;
     text-decoration: solid;
-    background-color: blue;
+    background-color: turquoise;
     color: white;
     
 }
 html h1 {
     font-size: 40px;
 }
-
+ 
 html h2 {
     font-size: 30px
 }
@@ -26,74 +24,157 @@ body #discord a:hover{
     cursor: pointer;
     background-color: aqua;
     color: yellow;
-    text-decoration: underline;
-}
+    text-decoration: underline;}
 
 body #username a:hover{
     cursor: pointer;
     background-color: aqua;
     color: yellow;
-    text-decoration: underline;
-}
+    text-decoration: underline;}
 
 body a:hover{
-    cursor: pointer;
+    /* cursor: ; */
+   
+    object-fit: cover;
+    object-position: fixed;
     background-color: aqua;
     color: yellow;
-    text-decoration: underline;
-}
+    text-decoration: underline;}
 
 body .digitalent a:hover{
     cursor: pointer;
     background-color: teal;
     color: yellow;
-    text-decoration: underline;
-}
+    text-decoration: underline;}
 
 body .codecademy a:hover{
     cursor: pointer;
     background-color: teal;
     color: yellow;
-    text-decoration: underline;
-}
+    text-decoration: underline;}
 
 body .linkedin-learning a:hover{
     cursor: pointer;
     background-color: teal;
     color: yellow;
-    text-decoration: underline;
-}
+    text-decoration: underline;}
 
 body .menara-komputindo a:hover{
     cursor: pointer;
     background-color: teal;
     color: yellow;
-    text-decoration: underline;
+    text-decoration: underline;}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    align-items: flex-start |flex-end;}
+
+#container2 {
+        align-items:baseline;  
+       
+        margin-left: 1000px;
+        padding-right: 5000px ;
+        border: solid;
+        border-radius: 20px;
+        position: fixed;
+        font-size: small;
+        font-weight: lighter;
 }
 
 header {
-    background-color: ;
+    /* background-color: ; */
+    
     color: white;
     border: 50%;
     border-radius: 50%;
-    height: 30vh;
+    height: 200px;
+
 }
+
+.sidebar {
+    padding-top: 20px ;
+    width: auto;
+    
+    background-color: #333;
+    color: white;
+}
+.slider {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    
+    /* padding: 1600px; */
+    
+  }
+
+  .slider-content {
+    display: flex;
+    transition: transform 0.2s ease-in-out;
+    
+  }
+  
+  .slide {
+    flex: 0 0 450px;
+    height: 100px;
+
+  }
+
+
 header ul{
     display: block;
     margin: 0, auto;
     line-break: 1em;
     line-height: 1em;
+    list-style: none outside none;
     
 }
 
-header li {
-    display: inline;
+header .sidebar a {
+    text-align: none;
+    color: white;
+}
+
+header nav li {
+    display: inline-flex;
+    font-size: medium;
+    height: auto;
+    width: auto;
+     /* z-index: 1; */
+    position: relative;
+     overflow: hidden; 
     /* margin: */
-    list-style: none outside none;
+    line-height: 20px;
     margin: 0, auto;
     border: 0, auto; 
-    border-radius: 50%;
-    padding: 12px;
+    /* border-radius: 20%; */
+    padding: 10 20px;    
+}
+
+ .main-content{
+    position: relative;
+    display: flex-inline;
+    flex-grow: initial;
+    text-transform: capitalize;
+    border: 33cm;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    
+    /* align-items: center; */
+}
+
+ main {
+    
+    border: 20px;   
+    position: relative;
+    border-radius: 40%;
+} 
+
+.foto{
+    display: inline-flex;
+    
 }
 
 .tab {
@@ -105,8 +186,8 @@ header li {
 body{
     background-color: hsla(g, 50%, lightness, alpha);
     color: white;
-    font-size: larger;
-    border: ;
+    /* overflow: scroll;  */
+    /* border: da
     margin: 50px;
     text-align: justify ;
     display: inline-flexbox;
@@ -114,11 +195,9 @@ body{
 
 body img{
     width: 30%;
-    padding-right: ;
+    /* padding-right: ; */
     height: 20%;
 }
-
-
 
 body .Contact-container ol{
     display: block;
